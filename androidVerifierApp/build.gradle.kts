@@ -74,11 +74,11 @@ android {
         create("Dev") {
             dimension = "environment"
             applicationIdSuffix = ".dev"
-            manifestPlaceholders["appLabel"] = "(Dev) EUDI Verifier"
+            manifestPlaceholders["appLabel"] = "(Dev) Sports Wallet Verifier"
         }
         create("Public") {
             dimension = "environment"
-            manifestPlaceholders["appLabel"] = "EUDI Verifier"
+            manifestPlaceholders["appLabel"] = "Sports Wallet Verifier"
         }
     }
 

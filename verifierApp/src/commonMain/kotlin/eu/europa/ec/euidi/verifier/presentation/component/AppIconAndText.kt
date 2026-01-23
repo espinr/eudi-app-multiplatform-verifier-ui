@@ -24,6 +24,8 @@ import androidx.compose.runtime.Immutable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.ColorFilter
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.layout.FixedScale
 import androidx.compose.ui.unit.dp
 import eu.europa.ec.euidi.verifier.presentation.component.preview.PreviewTheme
 import eu.europa.ec.euidi.verifier.presentation.component.preview.ThemeModePreviews
@@ -51,13 +53,16 @@ fun AppIconAndText(
         ),
         verticalAlignment = Alignment.Top
     ) {
-        WrapImage(iconData = appIconAndTextData.appIcon)
         WrapImage(
+            iconData = appIconAndTextData.appIcon,
+            contentScale = FixedScale(0.2f),
+        )
+/*        WrapImage(
             iconData = appIconAndTextData.appText,
             colorFilter = ColorFilter.tint(
                 color = MaterialTheme.colorScheme.onSurface
             )
-        )
+        )*/
     }
 }
 

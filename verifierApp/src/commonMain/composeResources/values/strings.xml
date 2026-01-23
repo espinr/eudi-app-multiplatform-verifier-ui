@@ -17,7 +17,7 @@
 <resources>
 
     <!-- Generic -->
-    <string name="generic_error_message">Oups! Something went wrong</string>
+    <string name="generic_error_message">Oops! Something went wrong</string>
     <string name="generic_error_description">If the issue persists, please contact customer support</string>
     <string name="generic_error_button_retry">TRY AGAIN</string>
     <string name="generic_network_error_message">You are not connected to the internet</string>
@@ -49,9 +49,9 @@
     <string name="content_description_image_or_placeholder_icon">Image or placeholder icon</string>
 
     <!-- Home -->
-    <string name="home_screen_title">EUDI Proximity Verifier</string>
+    <string name="home_screen_title">Official's Verification</string>
     <string name="home_screen_sticky_bottom_text">Scan QR Code</string>
-    <string name="home_screen_main_button_text_default">Tap to create request</string>
+    <string name="home_screen_main_button_text_default">Select attestations</string>
     <string name="home_screen_main_button_text_separator">; </string>
     <string name="home_screen_nfc_title">NFC ready to tap</string>
 
@@ -83,7 +83,7 @@
     <string name="settings_screen_item_ble_peripheral_server_description_unselected">BLE peripheral server mode deactivated</string>
 
     <!-- Documents To Request -->
-    <string name="documents_to_request_screen_title">Documents to request</string>
+    <string name="documents_to_request_screen_title">Credentials to request</string>
     <string name="documents_to_request_screen_status_connecting">Connecting...</string>">
     <string name="documents_to_request_screen_status_connected">Connected</string>">
     <string name="documents_to_request_screen_search_placeholder">Search documents</string>
@@ -128,6 +128,8 @@
     <string name="document_type_pid">PID</string>
     <string name="document_type_mdl">mDL</string>
     <string name="document_type_employee_id">Employee ID</string>
+    <string name="document_type_health_self">Health Self-Declaration</string>
+    <string name="document_type_sports_license">Athlete License</string>
 
     <!-- Document Claim Translations -->
     <string name="pid_family_name">Family Name(s)</string>

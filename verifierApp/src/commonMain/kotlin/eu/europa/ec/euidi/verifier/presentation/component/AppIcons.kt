@@ -42,7 +42,7 @@ import eudiverifier.verifierapp.generated.resources.ic_error
 import eudiverifier.verifierapp.generated.resources.ic_expand_less
 import eudiverifier.verifierapp.generated.resources.ic_expand_more
 import eudiverifier.verifierapp.generated.resources.ic_home
-import eudiverifier.verifierapp.generated.resources.ic_logo_full
+import eudiverifier.verifierapp.generated.resources.nationals
 import eudiverifier.verifierapp.generated.resources.ic_logo_plain
 import eudiverifier.verifierapp.generated.resources.ic_logo_text
 import eudiverifier.verifierapp.generated.resources.ic_menu
@@ -93,12 +93,12 @@ object AppIcons {
     )
 
     val LogoFull: IconDataUi = IconDataUi(
-        resourceId = Res.drawable.ic_logo_full,
+        resourceId = Res.drawable.nationals,
         contentDescriptionId = Res.string.content_description_logo_full_icon,
     )
 
     val LogoPlain: IconDataUi = IconDataUi(
-        resourceId = Res.drawable.ic_logo_plain,
+        resourceId = Res.drawable.nationals,
         contentDescriptionId = Res.string.content_description_logo_plain_icon,
     )
 

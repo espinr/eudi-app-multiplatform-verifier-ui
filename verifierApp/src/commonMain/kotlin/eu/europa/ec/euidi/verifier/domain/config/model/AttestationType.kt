@@ -21,8 +21,10 @@ import eu.europa.ec.euidi.verifier.presentation.utils.CommonParcelable
 import eu.europa.ec.euidi.verifier.presentation.utils.CommonParcelize
 import eudiverifier.verifierapp.generated.resources.Res
 import eudiverifier.verifierapp.generated.resources.document_type_employee_id
+import eudiverifier.verifierapp.generated.resources.document_type_health_self
 import eudiverifier.verifierapp.generated.resources.document_type_mdl
 import eudiverifier.verifierapp.generated.resources.document_type_pid
+import eudiverifier.verifierapp.generated.resources.document_type_sports_license
 
 @CommonParcelize
 sealed interface AttestationType : CommonParcelable {
@@ -56,6 +58,24 @@ sealed interface AttestationType : CommonParcelable {
             get() = "eu.europa.ec.eudi.employee.1"
     }
 
+    data object SportsLicense : AttestationType {
+
+        override val namespace: String
+            get() = "net.openathletics.license.1"
+
+        override val docType: String
+            get() = "net.openathletics.license.1"
+    }
+
+    data object HealthSelf : AttestationType {
+
+        override val namespace: String
+            get() = "net.openathletics.health.1"
+
+        override val docType: String
+            get() = "net.openathletics.health.1"
+    }
+
     companion object {
         fun AttestationType.getDisplayName(
             resourceProvider: ResourceProvider
@@ -64,6 +84,8 @@ sealed interface AttestationType : CommonParcelable {
                 Pid -> resourceProvider.getSharedString(Res.string.document_type_pid)
                 Mdl -> resourceProvider.getSharedString(Res.string.document_type_mdl)
                 EmployeeId -> resourceProvider.getSharedString(Res.string.document_type_employee_id)
+                SportsLicense -> resourceProvider.getSharedString(Res.string.document_type_sports_license)
+                HealthSelf -> resourceProvider.getSharedString(Res.string.document_type_health_self)
             }
         }
 
@@ -72,6 +94,8 @@ sealed interface AttestationType : CommonParcelable {
                 Pid.docType -> Pid
                 Mdl.docType -> Mdl
                 EmployeeId.docType -> EmployeeId
+                SportsLicense.docType -> SportsLicense
+                HealthSelf.docType -> HealthSelf
                 else -> throw IllegalArgumentException("Unknown docType: $docType")
             }
         }
