@@ -1,21 +1,42 @@
-# EUDI Multiplatform Verifier Application
+# EUDI-Compatible Sports Wallet - Verifier App
 
-:heavy_exclamation_mark: **Important!** Before you proceed, please read
-the [EUDI Wallet Reference Implementation project description](https://github.com/eu-digital-identity-wallet/.github/blob/main/profile/reference-implementation.md)
+This project is a proof of concept to show the feasibility of applying EUDI Wallet standards to the decentralized nature of credentials in regulated sports. This project was developed under the scope of [W3C OpenAthletics Community Group](https://www.w3.org/community/opentrack/) and motivated by the outcomes of [AthTech'25](https://athtech.run/2025). The implementation is an adaptation of the [official EUDI Android Wallet reference app](https://github.com/eu-digital-identity-wallet/).
+
+In this project you can find new document definitions required to implement the main [use cases and scenarios for sports credentials](https://www.w3.org/community/opentrack/2026/04/03/use-cases-of-decentralized-sports-credentials/).    
+
+The app simulates an Athletics Official's app for verification of athlete's licenses in proximity.
+
+![Screenshot of the app for Sports Officials](./screenshot.png)
+
+## Related repositories
+
+If you want to test or reuse this project, just use the existing servers deployed or get all the software components in the following repositories:
+
+* WALLET NATIVE APP
+  * Wallet for Android: https://github.com/espinr/eudi-app-android  
+  * Backend for the Wallet: https://github.com/espinr/eudi-srv-wallet-provider
+
+* VERIFIER (PROXIMITY)
+  * Verifier for Android (this repo): https://github.com/espinr/eudi-app-multiplatform
+
+* ISSUANCE SERVICE:
+  * Status list server (checking/revocation of credentials): https://github.com/espinr/eudi-srv-statuslist-py
+  * OIDC server: https://github.com/espinr/eudi-srv-issuer-oidc-py
+  * APIs for the backend: https://github.com/espinr/eudi-srv-web-issuing-eudiw-py
+  * Frontend: https://github.com/espinr/eudi-srv-web-issuing-frontend-eudiw-py
+
+* ONLINE VERIFICATION SERVICE:
+  * Backend APIs: https://github.com/espinr/eudi-srv-web-verifier-endpoint
+  * Frontend: https://github.com/espinr/eudi-web-verifier
+
+The issuance and verification services can be deployed easily using Docker Compose. 
 
 ----
 
-## Table of contents
+:heavy_exclamation_mark: **Important!** For more information about the base of the original project, please read the [EUDI Wallet Reference Implementation project description](https://github.com/eu-digital-identity-wallet/.github/blob/main/profile/reference-implementation.md)
 
-* [Overview](#overview)
-* [Important things to know](#important-things-to-know)
-* [How to use the application](#how-to-use-the-application)
-* [Application configuration](#application-configuration)
-* [Disclaimer](#disclaimer)
-* [How to contribute](#how-to-contribute)
-* [License](#license)
+## About the EUDI Multiplatform Verifier Application
 
-## Overview
 
 The EUDI Verifier App is a cross-platform (iOS and Android) reference implementation for ISO 18013-5 proximity-based credential verification. Built with Kotlin Multiplatform (KMP/CMP), the app provides a unified codebase for business logic, leveraging platform-native libraries to ensure compliance with the latest standards and security requirements.
 
