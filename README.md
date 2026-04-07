@@ -17,7 +17,7 @@ If you want to test or reuse this project, just use the existing servers deploye
   * Backend for the Wallet: https://github.com/espinr/eudi-srv-wallet-provider
 
 * VERIFIER (PROXIMITY)
-  * Verifier for Android (this repo): https://github.com/espinr/eudi-app-multiplatform
+  * Verifier for Android (this repo): https://github.com/espinr/eudi-app-multiplatform-verifier-ui
 
 * ISSUANCE SERVICE:
   * Status list server (checking/revocation of credentials): https://github.com/espinr/eudi-srv-statuslist-py
